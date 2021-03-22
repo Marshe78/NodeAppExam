@@ -1,0 +1,62 @@
+<%- include('partials/head') %>
+
+<%- include('header') %>
+
+<h1>Ajouter une Annonce</h1>
+
+<form class="leForm">
+  <label for="titre" class="element">Titre :</label>
+  <input type="text" class="inputStyle" id="titre">
+
+  </br>
+
+  <label for="description" class="element">Description :</label>
+  <input type="text" class="inputStyle" id="description">
+
+  </br>
+  
+  <label for="adresse" class="element">Adresse :</label>
+  <input type="text" class="inputStyle" id="adresse">
+  
+  </br>
+
+  <label for="code_postal" class="element">Code postal :</label>
+  <input type="text" class="inputStyle" id="code_postal">
+
+  </br>
+  
+  <label for="ville" class="element">Ville :</label>
+  <input type="text" class="inputStyle" id="ville">
+
+  </br>
+
+  <label for="prix" class="element">Prix :</label>
+  <input type="text" class="inputStyle" id="prix">
+
+  </br>
+
+  <button type="submit" class="leBouton" onclick="addAnnonce()">Créer</button>
+</form>
+
+<style>
+.element{
+  font-size:20px;
+  display:inline;
+  padding-left:10px;
+  margin: 0 auto;
+}
+.inputStyle{
+  width: 200px;
+}
+.leBouton{
+  margin-top: 10px;
+  background-color: aquamarine;
+  width: 200px;
+  cursor: pointer;
+}
+.leForm{
+  background-color: chocolate;
+  text-align: center;
+}
+  
+</style>

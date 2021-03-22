@@ -1,0 +1,35 @@
+<%- include('partials/head') %>
+
+<%- include('header') %>
+
+<div class="lesAnnonces">
+    <div class="div1">Titre : <%= annonce.titre %></div>
+    <div class="div1">description : <%= annonce.description %></div>
+    <div class="div1">adresse : <%= annonce.adresse %></div>
+    <div class="div1">code postal : <%= annonce.code_postal %></div>
+    <div class="div1">ville :<%= annonce.ville %></div>
+    <div class="div1">prix : <%= annonce.prix %></div>
+</div>
+
+<span style="display: none;"><%= annonce._id %></span>
+
+</br>
+<a class="fauxbutton" href="../../modifier/<%= annonce._id %>">
+    Modifier L'annonce
+</a>
+
+<style>
+    .lesAnnonces{
+        background-color: darkkhaki;
+        font-size: 40px;
+        padding-left: 13px;
+        
+    }
+    .fauxbutton{
+        background-color: darkorchid;
+        padding: 5px;
+        border-radius: 2%;
+        list-style: none;
+        color: black;
+    }
+</style>

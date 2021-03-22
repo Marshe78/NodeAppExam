@@ -1,0 +1,57 @@
+<%- include('partials/head') %>
+
+<%- include('header') %>
+
+<h1>Modifier une Annonce</h1>
+
+<form class="modif">
+  <label for="titre">Titre :</label>
+  <input type="text" id="titre" value="<%= annonce.titre %>">
+
+  </br>
+
+  <label for="description">Description :</label>
+  <input type="text" id="description" value="<%= annonce.description %>">
+
+  </br>
+  
+  <label for="adresse">Adresse :</label>
+  <input type="text" id="adresse" value="<%= annonce.adresse %>">
+  
+  </br>
+
+  <label for="code_postal">Code postal :</label>
+  <input type="text" id="code_postal" value="<%= annonce.code_postal %>">
+
+  </br>
+  
+  <label for="ville">Ville :</label>
+  <input type="text" id="ville" value="<%= annonce.ville %>">
+
+  </br>
+
+  <label for="prix">Prix :</label>
+  <input type="text" id="prix" value="<%= annonce.prix %>">
+
+  </br>
+
+  <button type="submit" class="vraibutton" onclick="changeAnnonce('<%= annonce._id %>')">Confirmer</button>
+</form>
+
+<style>
+  .modif{
+        background-color: darkkhaki;
+        font-size: 40px;
+        padding-left: 13px;
+    }
+  
+  .vraibutton{
+      background-color: darkorchid;
+      font-size: 20px;
+      padding: 5px;
+      border-radius: 2%;
+      list-style: none;
+      cursor: pointer;
+      margin-top: 13px;
+  }
+</style>
